@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form with Validation</title>
+    <link rel="stylesheet" href="task.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Sign-Up Form</h1>
+    </header>
+    <main class="main">
+      <section class="form-section">
+        <form id="signupForm" class="form">
+          <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your full name"
+              required
+            />
+            <small class="error-message" id="nameError"></small>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+            <small class="error-message" id="emailError"></small>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+            <small class="error-message" id="passwordError"></small>
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              placeholder="Confirm your password"
+              required
+            />
+            <small class="error-message" id="confirmPasswordError"></small>
+          </div>
+          <button type="submit" class="button">Sign Up</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>&copy; 2024 Form Validation Example</p>
+    </footer>
+    <script src="task.js"></script>
+  </body>
+</html>
